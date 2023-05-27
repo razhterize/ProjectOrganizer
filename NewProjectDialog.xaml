@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectOrganizer"
         mc:Ignorable="d"
-        Title="New Project" Height="124" Width="400" HorizontalAlignment="Center">
+        Title="New Project" Height="148" Width="415" HorizontalAlignment="Center">
     <Grid>
         <Label Content="Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26"/>
         <Label Content="Path" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="57,18,0,0" TextWrapping="Wrap" Text="Project Name" VerticalAlignment="Top" Width="325"/>
+        <TextBox x:Name="ProjectName" HorizontalAlignment="Left" Margin="57,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" TextChanged="NameFieldChanged"/>
         <TextBox HorizontalAlignment="Left" Margin="57,47,0,0" TextWrapping="Wrap" Text="Project Path" VerticalAlignment="Top" Width="289"/>
-        <Button Content="..." HorizontalAlignment="Left" Margin="351,47,0,0" VerticalAlignment="Top" Height="18" Width="31"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="281,78,0,0" VerticalAlignment="Top" Width="52"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="338,78,0,0" VerticalAlignment="Top" Width="52"/>
+        <Button Content="..." Click="NewProjectOpenExplorer" HorizontalAlignment="Left" Margin="351,47,0,0" VerticalAlignment="Top" Height="18" Width="31"/>
+        <Button Content="Add" Click="NewProjectAddClicked" HorizontalAlignment="Left" Margin="275,78,0,0" VerticalAlignment="Top" Width="52"/>
+        <Button Content="Cancel" Click="NewProjectCancelClicked" HorizontalAlignment="Left" Margin="332,78,0,0" VerticalAlignment="Top" Width="52"/>
     </Grid>
 </Window>
